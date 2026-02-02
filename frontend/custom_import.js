@@ -17,7 +17,7 @@ const CONFIG = {
     margineDestro: "10px",            
     margineSinistro: "5px",
 
-    margineSuperiore: "5px", // Aumenta questo numero per scendere (es. "8px")
+    margineSuperiore: "5px", 
     
     posizione: "inizio"               
 };
@@ -33,7 +33,7 @@ function creaPulsante() {
     var btn = document.createElement("button");
     btn.className = "btn-import-custom"; 
     
-    // --- STILE "TILE" ---
+    // STILE "TILE" 
     btn.style.display = "inline-flex";       
     btn.style.flexDirection = "column";      
     btn.style.alignItems = "center";         
@@ -54,8 +54,6 @@ function creaPulsante() {
     btn.style.border = CONFIG.bordo;
     btn.style.marginRight = CONFIG.margineDestro;
     btn.style.marginLeft = CONFIG.margineSinistro;
-    
-    // --- ECCO LA RIGA CHE MANCAVA PRIMA! ---
     btn.style.marginTop = CONFIG.margineSuperiore; 
 
     // Icona
@@ -108,7 +106,7 @@ function creaPulsante() {
     document.body.appendChild(input);
 }
 
-// LOGICA CARICAMENTO
+// Caricamento
 function gestisciFile() {
     var file = this.files[0];
     if (!file) return;
