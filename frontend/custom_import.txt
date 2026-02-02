@@ -1,0 +1,7 @@
+Una volta caricato il nuovo file "ibom.html" della nuova scheda elettronica (KiCad) 
+aggiunger questo script in fondo tra il </div> e il </body> in modo che si collega al 
+file "custom_import.js" che sarebbe lo script che fa funzionare il pulsante per importare
+i file SVC.
+
+
+<script src="custom_import.js"></script>
